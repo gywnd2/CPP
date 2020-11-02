@@ -4,10 +4,10 @@
 int main()
 {
 	char name[100];
-	char pnumber[200];
+	char pnumber[200]
 	
 	std::cout<<"이름 입력 : ";
-	std::cin>>name;
+	std::cin>>name
 	
 	std::cout<<"전화번호 입력 : ";
 	std::cin>>pnumber;
