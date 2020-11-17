@@ -6,11 +6,11 @@ int main()
 	
 	for(int n=1; n<=5; n++)
 	{
-		std::cout<<n<<"¹øÂ° Á¤¼öÀÔ·Â : ";
+		std::cout<<n<<"Â¹Ã¸Ã‚Â° ÃÂ¤Â¼Ã¶Ã€Ã”Â·Ã‚ : ";
 		std::cin>>input;
 		result+=input;
 	}
 	 
-	std::cout<<"ÇÕ°è´Â : "<<result;
+	std::cout<<"Ã‡Ã•Â°Ã¨Â´Ã‚ : "<<result;
 	return 0;
 }
