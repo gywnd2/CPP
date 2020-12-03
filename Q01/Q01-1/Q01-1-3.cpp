@@ -3,7 +3,7 @@
 int main()
 {
 	int std;
-	std::cout<<"±¸±¸´Ü ¸î´Ü? : ";
+	std::cout<<"Â±Â¸Â±Â¸Â´Ãœ Â¸Ã®Â´Ãœ? : ";
 	std::cin>>std;
 	for(int r=1;r<10;r++)
 	{
