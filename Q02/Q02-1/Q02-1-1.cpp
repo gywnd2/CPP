@@ -7,7 +7,7 @@ void increase(int &ref)
 
 void inverse(int *ptr)
 {
-	*ptr=*ptr*(-1);
+	*ptr*=-1;
 }
 
 int main(){
