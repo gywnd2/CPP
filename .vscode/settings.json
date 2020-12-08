@@ -1,6 +1,7 @@
 {
     "editor.fontFamily": "D2Coding",
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ostream": "cpp"
     }
 }
