@@ -13,6 +13,7 @@
             "command": "g++",
             "args": [
                 "${file}",
+                "-g",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
@@ -43,6 +44,7 @@
             "args": [
                 "${file}",
                 "-o",
+                "-g",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "group": "build",
