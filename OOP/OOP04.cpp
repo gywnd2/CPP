@@ -1,6 +1,6 @@
-// 뱅킹 v1.1
+// 뱅킹 v1.3
 
-// 구조체에서 클래스로 변경
+//const 함수 선언 추가
 
 #include <iostream>
 #include <cstring>
@@ -27,12 +27,19 @@ public:
         strcpy(Name, n);
     }
 
+    Account(const Account &acc)
+        : AccID(acc.AccID), Balance(acc.Balance)
+    {
+        Name = new char[strlen(acc.Name) + 1];
+        strcpy(Name, acc.Name);
+    }
+
     ~Account()
     {
         delete[] Name;
     }
 
-    void showaccinfo()
+    void showaccinfo() const
     {
         cout << "계좌ID : " << AccID << endl;
         cout << "성 명 : " << Name << endl;

@@ -1,6 +1,5 @@
-// 뱅킹 v1.1
-
-// 구조체에서 클래스로 변경
+// 뱅킹 v1.2
+//복사 생성자 선언
 
 #include <iostream>
 #include <cstring>
@@ -25,6 +24,13 @@ public:
     {
         Name = new char[strlen(n) + 1];
         strcpy(Name, n);
+    }
+
+    Account(const Account &acc)
+        : AccID(acc.AccID), Balance(acc.Balance)
+    {
+        Name = new char[strlen(acc.Name) + 1];
+        strcpy(Name, acc.Name);
     }
 
     ~Account()

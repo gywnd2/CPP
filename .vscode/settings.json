@@ -2,6 +2,7 @@
     "editor.fontFamily": "D2Coding",
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "q05-1": "cpp"
     }
 }
