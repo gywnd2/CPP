@@ -10,7 +10,7 @@ using namespace std;
 int id, bal;
 char name[100];
 int choice, accindex = 0;
-int exitswitch = 0;
+int exitswitch = 0; 
 
 class Account
 {
