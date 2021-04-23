@@ -9,7 +9,7 @@ using namespace std;
 
 int id, bal;
 char name[100];
-int choice, accindex = 0;
+int choice;
 int exitswitch = 0;
 
 class Account
@@ -57,23 +57,13 @@ public:
     }
 };
 
-class Account *Acc[5];
-
 class AccountHandler
 {
+private:
+    class Account *Acc[5];
+    int accindex = 0;
+
 public:
-    void menu()
-    {
-        system("cls");
-        cout << "-----메뉴-----" << endl;
-        cout << "1. 계좌개설" << endl;
-        cout << "2. 입 금" << endl;
-        cout << "3. 출 금" << endl;
-        cout << "4. 계좌정보 전체 출력" << endl;
-        cout << "5. 프로그램 종료" << endl;
-        cout << "선택 : ";
-        cin >> choice;
-    }
     void CreateAcc()
     {
         system("cls");
@@ -149,11 +139,24 @@ public:
 
 class AccountHandler accHandle;
 
+void menu()
+{
+    system("cls");
+    cout << "-----메뉴-----" << endl;
+    cout << "1. 계좌개설" << endl;
+    cout << "2. 입 금" << endl;
+    cout << "3. 출 금" << endl;
+    cout << "4. 계좌정보 전체 출력" << endl;
+    cout << "5. 프로그램 종료" << endl;
+    cout << "선택 : ";
+    cin >> choice;
+}
+
 int main()
 {
     while (exitswitch == 0)
     {
-        accHandle.menu();
+        menu();
 
         switch (choice)
         {
@@ -180,7 +183,7 @@ int main()
             break;
 
         default:
-            accHandle.menu();
+            menu();
         }
         if (exitswitch == 1)
             break;
